@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Promo Code Finder</title>
+    <meta name="description" content="A Chrome extension that, after your click, tests your saved promo codes at checkout and shows which one saves the most." />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="wrap">
+      <strong class="brand">Promo Code Finder</strong>
+      <nav><a href="#how">How it works</a> <a href="#rules">Our rules</a> <a href="privacy.html">Privacy</a></nav>
+    </header>
+
+    <main class="wrap">
+      <section class="hero">
+        <h1>Find the promo code that saves you the most</h1>
+        <p class="lead">
+          A browser extension for shoppers in the UK and Europe. At checkout, one click tests your saved promo codes
+          one by one and shows which code gives the biggest discount.
+        </p>
+        <p class="status">Status: in development, personal beta. Not yet listed in the Chrome Web Store.</p>
+      </section>
+
+      <section id="how">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li><strong>You save your codes.</strong> Add them on the options page, one line per shop: <code>shop.co.uk: CODE1, CODE2</code>.</li>
+          <li><strong>You open a checkout page.</strong> The extension looks for the discount code field. If it cannot find it, you can point at the field yourself.</li>
+          <li><strong>You click “Try codes”.</strong> Nothing runs before this click. The extension enters each code, reads the new total, and removes the code again if the shop allows only one.</li>
+          <li><strong>You see the result.</strong> The best code is applied and shown with the exact amount it saves. If no code helps, your basket is left unchanged.</li>
+        </ol>
+      </section>
+
+      <section id="rules">
+        <h2>Our rules</h2>
+        <ul class="rules">
+          <li><strong>Only after your click.</strong> No background testing, no hidden links, no hidden cookies.</li>
+          <li><strong>Only the coupon field.</strong> It never presses Pay or Continue, never removes basket items and never submits a form that holds more than the coupon field.</li>
+          <li><strong>Same behaviour for everyone.</strong> No special modes for reviewers or testers and no remotely switched behaviour. All logic ships inside the extension package.</li>
+          <li><strong>No guessing and no scraping.</strong> The extension does not try random codes and does not scrape coupon sites. Codes come from you.</li>
+          <li><strong>Your data stays with you.</strong> Codes, pages, URLs and totals never leave your browser. See the <a href="privacy.html">privacy policy</a>.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Planned: licensed offers and cashback</h2>
+        <p>
+          We plan to add codes from licensed affiliate networks and, later, click-activated cashback. If this happens, it will follow these rules:
+          only after your click, only with a real benefit to you (a working code or visible cashback), never replacing another publisher’s
+          attribution, and with clear disclosure in the extension, on this site and in the store listing before you install.
+        </p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions or problems with a shop? Email <a href="mailto:nimbus2219@gmail.com">nimbus2219@gmail.com</a>.</p>
+      </section>
+    </main>
+
+    <footer class="wrap muted">
+      <p>Promo Code Finder is an independent project. Shop names belong to their owners and are used only to describe where the extension can be used.</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Privacy policy | Promo Code Finder</title>
+        <meta
+            name="description"
+            content="Promo Code Finder keeps everything in your browser and sends no data anywhere."
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header class="wrap">
+            <a class="brand" href="index.html"
+                ><strong>Promo Code Finder</strong></a
+            >
+            <nav>
+                <a href="index.html">Home</a> <a href="privacy.html">Privacy</a>
+            </nav>
+        </header>
+
+        <main class="wrap">
+            <h1>Privacy policy</h1>
+            <p class="muted">Last updated: 2 November 2026</p>
+
+            <h2>In short</h2>
+            <p>
+                Promo Code Finder does not collect, send or share your data.
+                Everything the extension needs stays in your browser.
+            </p>
+
+            <h2>What the extension stores, and where</h2>
+            <ul>
+                <li>
+                    <strong>Your promo codes and settings</strong> you enter on
+                    the options page, in <code>chrome.storage.local</code> on
+                    your device.
+                </li>
+                <li>
+                    <strong>History</strong> of which codes saved money on which
+                    shop, in <code>chrome.storage.local</code>, so the best
+                    codes are tried first. You can clear it on the options page.
+                </li>
+                <li>
+                    <strong>Field choices</strong> if you point at a coupon
+                    field yourself: a short CSS selector per shop domain, in
+                    <code>chrome.storage.local</code>.
+                </li>
+                <li>
+                    <strong>A temporary run state</strong> in the page’s
+                    <code>sessionStorage</code> while codes are being tested, so
+                    a shop that reloads the page can be resumed. It is removed
+                    when the run ends or the tab closes.
+                </li>
+            </ul>
+
+            <h2>What the extension does not do</h2>
+            <ul>
+                <li>
+                    It does not send your codes, the pages you visit, URLs,
+                    basket contents or totals to us or to anyone else.
+                </li>
+                <li>It does not use analytics, advertising or tracking.</li>
+                <li>
+                    It does not sell or share data, and it does not use data for
+                    creditworthiness or lending decisions.
+                </li>
+                <li>It does not run any code downloaded from a server.</li>
+            </ul>
+
+            <h2>When the extension reads a page</h2>
+            <p>
+                The extension runs in shop pages so it can find the discount
+                code field and the order total. It reads this only on your
+                device. Testing codes starts only after you click “Try codes”.
+            </p>
+
+            <h2>Permissions</h2>
+            <p>
+                The extension asks for the <code>storage</code> permission only,
+                to keep the data listed above on your device. Its content script
+                runs on HTTPS pages so it can work on any shop’s checkout.
+            </p>
+
+            <h2>Changes</h2>
+            <p>
+                If a future version adds a feature that contacts a server (for
+                example, downloading a list of licensed offers or cashback),
+                this policy will be updated first and the change will be
+                disclosed in the extension and in the store listing before you
+                install it.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+                Questions about privacy:
+                <a href="mailto:nimbus2219@gmail.com">nimbus2219@gmail.com</a>.
+            </p>
+        </main>
+
+        <footer class="wrap muted">
+            <p><a href="index.html">Back to the home page</a></p>
+        </footer>
+    </body>
+</html>
